@@ -1,0 +1,28 @@
+{
+  "name": "ipl-auction-value-optimizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IPL Auction Value Optimizer — Sports Analytics & 0-1 Knapsack MILP Squad Optimization Engine",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "python -m uvicorn backend.app:app --reload --port 8000",
+    "build:frontend": "cd frontend && npm run build",
+    "test:python": "python -m pytest -v tests/",
+    "pipeline": "python scripts/run_pipeline.py",
+    "validate": "python scripts/validate_deployment.py",
+    "vercel-build": "cd frontend && npm install && npm run build"
+  },
+  "keywords": [
+    "ipl",
+    "cricket",
+    "sports-analytics",
+    "auction-optimization",
+    "linear-programming",
+    "knapsack-problem",
+    "fastapi",
+    "react",
+    "typescript"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT"
+}
